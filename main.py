@@ -1,3 +1,4 @@
+#!/bin/usr/python3
 from hikari import GatewayBot, Intents, Activity, ActivityType, GuildMessageCreateEvent
 from config import *
 import time
