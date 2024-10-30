@@ -20,7 +20,7 @@ async def countdown(t: int) -> None:
 async def trigger_countdown(event: GuildMessageCreateEvent):
     print(event.content)
     if event.content.startswith('!cd'):
-        await bot.rest.create_message(content=f'<@&{GAY_MASTER}> Sabotage!!!!!', channel=TIMER_CHANNEL, role_mentions=True,
+        await bot.rest.create_message(content=f'<@&{CREWMATE_ROLE}> SABOTAGE:  Ballon 🎈', channel=TIMER_CHANNEL, role_mentions=True,
                                       mentions_everyone=True, user_mentions=True)
         await countdown(90)
 
